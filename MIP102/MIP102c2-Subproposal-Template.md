@@ -1,45 +1,44 @@
-# MIP102c2: MIP Amendment Subproposal Template
+# MIP102c2-SP8: MIP Amendment Subproposal
 
 ## Preamble
 
 ```
-MIP102c2-SP#: #
-MIP to be amended: <MIP#>
-Author(s):
-Contributors:
+MIP102c2-SP#: 8
+MIP to be amended: MIP107
+Author(s): @billybob
+Contributors: @opensky
 General Edit or Article 1 Edit:
 Tags: template
-Status:
-Date Proposed: <yyyy-mm-dd>
+Status: RFC
+Date Proposed: <2024-03-16>
 Date Ratified: <yyyy-mm-dd>
+Forum URL: https://forum.makerdao.com/t/mip102c2-sp8-mip-amendment-subproposals/20761
+Ratification Poll URL:
 ```
 
 ## Specification
 
-> **Instructions for Authors**
->
-> A MIP102c2 Subproposal must be either 1) an Article 1 Edit or a 2) General Edit.
-> 
-> If your MIP102c2 Subproposal seeks to amend Article 1 of a Scope Bounded Mutable Alignment Artifact, it is considered an Article 1 edit and cannot seek to amend any content except for Article 1.
-> 
-> If your MIP102c2 Subproposal does not seek to amend Article 1 of a Scope Bounded Mutable Alignment Artifact, it is considered a General Edit. An MIP102c2 General Edit cannot modify Article 1 > elements.
-> 
-> Depending on what type of Subproposal you are submitting, please:
-> 
-> 1. Indicate in the Preamble whether your MIP102c2 Subproposal is an Article 1 Edit or a General Edit.
-> 2. Copy and paste one of the two sentences below to populate the Specification section. Remove all other "Instructions for Authors" content.
-> 
-> - This MIP102c2 Subproposal seeks to amend Article 1 of a Scope Bounded Mutable Alignment Artifact. It is thus considered an Article 1 edit and cannot seek to amend any content except for Article 1.
 > - This MIP102c2 Subproposal does not seek to amend Article 1 of a Scope Bounded Mutable Alignment Artifact. It is thus considered a General Edit. An MIP102c2 General Edit cannot modify Article 1 elements.
 
 ### Motivation
 
-- Explain the amendment of the MIP/MIPs.
+- This subproposal will amend MIP107 Section 8.1, to include a strategy for the specifications of recoveries
 
 ### Amended MIPs and Components
 
-- List the MIPs and components that are being amended.
+- MIP 107 section 8
+- * 8.1: Stablecoin Recovery
+
+### MODIFICATIONS TO BE IMPLEMENTED
+## 8.1: Stablecoin Recovery
+### 8.1.1
+- * The strategy for returns should be based upon these factors:
+  * The minimum amount of DAI to be eligible is 1000. This is a spam protection and would help to make the solution long-term cost efficient.
+  * A 7.5% fee for a successful return. This fee goes towards the technical development and to compensate MakerDAO for user mistakes.
+  * Returns should be carried out at the beginning of each quarter.
+  * Protocol Facilitators should determine a list of contracts and addresses that are eligibile for stuck DAI return requests. Additions to this list can require a governance poll (tbd).
+  * Claimed DAI will only be returned to the address where the transaction originated.
 
 ### Amendment Pull Request
 
-- A link to the PR containing the amendment. MIP Editors can create the PR on request.
+- Pull Request TBD.
